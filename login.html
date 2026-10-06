@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Log in — GroundTruth</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><span class="dot"></span>GroundTruth</a>
+    <div class="nav-links">
+      <a href="register.html">New here? Create an account</a>
+    </div>
+  </div>
+</nav>
+
+<main class="auth-shell">
+  <div class="auth-card">
+    <h1>Welcome back</h1>
+    <p class="lede">Log in to file a report or check on one you've already sent.</p>
+
+    <div id="login-msg" class="form-msg"></div>
+
+    <form id="login-form" novalidate>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required />
+      </div>
+      <button type="submit" class="btn btn-primary btn-wide">Sign in</button>
+    </form>
+
+    <p class="auth-switch">Don't have an account? <a href="register.html">Create one</a></p>
+  </div>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

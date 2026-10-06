@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dashboard — GroundTruth</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="dash-root">
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><span class="dot"></span>GroundTruth</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <button id="logout-btn" class="btn btn-ghost btn-sm">Log out</button>
+    </div>
+  </div>
+</nav>
+
+<div class="dash-head">
+  <div class="wrap">
+    <div class="dash-greeting">
+      <h1 id="dash-name" style="font-size: 2.2rem;">Loading…</h1>
+      <span id="dash-badge" class="badge" style="display:none;">Authority</span>
+    </div>
+    <p class="lede">Your reports, the areas you can report in, and the categories available.</p>
+  </div>
+</div>
+
+<div class="wrap dash-grid">
+  <div>
+    <div class="panel">
+      <h3>Your reports</h3>
+      <p class="lede">The Report endpoint isn't wired up yet in this build — this panel will list your filed reports and their status once it is.</p>
+      <div class="empty-note">No reports to show yet — this will populate once the reports API is connected.</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="panel" style="margin-bottom: 24px;">
+      <h3>Areas</h3>
+      <p class="lede">Loaded live from the backend.</p>
+      <div id="dash-areas"><div class="empty-note">Loading…</div></div>
+    </div>
+
+    <div class="panel">
+      <h3>Categories</h3>
+      <p class="lede">Loaded live from the backend.</p>
+      <div id="dash-categories"><div class="empty-note">Loading…</div></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
